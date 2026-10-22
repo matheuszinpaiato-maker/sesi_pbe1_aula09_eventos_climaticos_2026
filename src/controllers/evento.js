@@ -73,7 +73,7 @@ const resumo = (req, res) => {
         } else {
             const resposta = {}
             resposta.media = results
-            con.query(sql1, (err, results) => {
+            con.query(sql2, (err, results) => {
                 if (err) {
                     console.error(err)
                     res.status(500).json({ error: 'Erro ao buscar eventos'})
@@ -82,8 +82,6 @@ const resumo = (req, res) => {
                     res.json(resposta)
                 }
             })
-            res.join(results)
-            con.query()
         }
     })
 }

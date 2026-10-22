@@ -20,6 +20,6 @@ router.get('/eventos', evento.listar)
 router.post('/eventos', evento.cadastrar)
 router.put('/eventos/:id', evento.alterar)
 router.delete('/eventos/:id', evento.excluir)
-router.get('/evento/resumo', evento.resumo)
+router.get('/eventos/resumo', evento.resumo)
 
 module.exports = router
