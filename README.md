@@ -29,3 +29,13 @@ ALTERAR
 <img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/usuario/alterar.png">
 EXCLUIR
 <img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/usuario/excluir.png">
+
+# Tecnologias:
+
+| Tecnologia | Descrição |
+|--|--|
+| Vscode| Editor de codigo fonte |
+| JAVA| Linguagem de programação |
+| SQL| Linguagem de programação para banco de dados |
+| NODE JS| Ambiente de execução para rodar o JAVA |
+| XAMPP| Servidor local no seu compitador |
