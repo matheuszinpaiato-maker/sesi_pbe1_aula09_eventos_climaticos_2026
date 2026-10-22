@@ -20,11 +20,11 @@ ALTERAR
 EXCLUIR
 <img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/evento/excluir.png">
 RESUMO
-<img src="">
+<img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/evento/resumo.png">
 
 # Teste Usuarios:
 LOGIN
-<img src=""> 
+<img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/usuario/login.png"> 
 LISTAR
 <img src="https://github.com/matheuszinpaiato-maker/sesi_pbe1_aula09_eventos_climaticos_2026/blob/main/prints/usuario/listar.png">
 CADASTRAR
