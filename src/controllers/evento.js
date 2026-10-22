@@ -63,9 +63,35 @@ const excluir = (req, res) => {
     })
 }
 
+const resumo = (req, res) => {
+    const sql1 = 'SELECT AVG(temperaturaMaxima) as "Temperaturas medias" FROM evento;'
+    const sql2 = 'SELECT * FROM evento;'
+    con.query(sql1, (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ error: 'Erro ao buscar medias' })
+        } else {
+            const resposta = {}
+            resposta.media = results
+            con.query(sql1, (err, results) => {
+                if (err) {
+                    console.error(err)
+                    res.status(500).json({ error: 'Erro ao buscar eventos'})
+                } else {
+                    resposta.eventos = results
+                    res.json(resposta)
+                }
+            })
+            res.join(results)
+            con.query()
+        }
+    })
+}
+
 module.exports = {
     cadastrar,
     excluir,
     alterar,
-    listar
+    listar,
+    resumo
 }

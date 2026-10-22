@@ -1,5 +1,22 @@
 const con = require('../db')
 
+const login = (req, res) => {
+    const {email, senha} = req.body
+    const sql = 'SELECT id, nome, email FROM usuario WHERE email = ? AND senha = password(?);'
+    con.query(sql, [email, senha], (err, results) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ erro: 'Erro ao listar usuarios' })
+        } else {
+            if (results.length == 0) {
+                res.status(404).json("Acesso negado, credenciais invalidas")
+            } else{
+                res.json(results)
+            }
+        }
+    })
+}
+
 const cadastrar = (req, res) => {
     const { nome, email, senha } = req.body
     try {
@@ -64,6 +81,7 @@ const excluir = (req, res) => {
 }
 
 module.exports = {
+    login,
     cadastrar,
     alterar,
     excluir,
