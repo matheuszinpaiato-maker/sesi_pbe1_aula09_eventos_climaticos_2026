@@ -39,3 +39,10 @@ EXCLUIR
 | SQL| Linguagem de programação para banco de dados |
 | NODE JS| Ambiente de execução para rodar o JAVA |
 | XAMPP| Servidor local no seu compitador |
+
+# Instruções para o teste na sua maquina:
+Passo a passo para testes:
+- Tenha um editor de código instalado (VS Code).
+- Clone este repositório para a sua máquina executando git clone [URL_DO_REPOSITORIO] no seu terminal.
+- Abra a pasta do projeto no editor escolhido.
+- Faça os testes dos endpoints (GET, POST, PUT e DELETE) utilizando o Insomnia ou o Thunder Client.
